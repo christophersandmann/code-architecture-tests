@@ -1,0 +1,14 @@
+= Code-Architecture-Tests
+The idea behind this little sample-project is to test "free" tools for testing the architecture of the written code.
+
+Given that the code should have this structure
+
+TODO: DIAGRAM
+
+the tests should fail if there is any violation against the ruleset.
+
+Tools to check:
+* Degraph[http://schauder.github.io/degraph/] (Done)
+* JDepend[http://clarkware.com/software/JDepend.html]
+* JDepend + Google Architecture Rules[http://architecturerules.googlecode.com/svn-history/r303/docs/alternatives.html]
+* XRadar[http://xradar.sourceforge.net/]
