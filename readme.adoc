@@ -6,10 +6,10 @@ Given that the code should have this structure
 [ditaa]
 ----
    +-------------+                   +------------+
-   |             |------------------>|	Entities  |
-   | Repoistories|                   |            |
-   |             |                   |            |
-   +-------------+         +-------->+------------+
+   |             |------------------>|            |
+   | Repoistories|                   |  Entities  |
+   |             |         +-------->|            |
+   +-------------+                   +------------+
           ^                |         
           |                |         
           |                |         
@@ -34,8 +34,15 @@ the tests should fail if there is any violation against the ruleset.
 Tools to check:
 
 * Degraph [http://schauder.github.io/degraph/] (Done)
-* JDepend [http://clarkware.com/software/JDepend.html]
-* JDepend + Google Architecture Rules [http://architecturerules.googlecode.com/svn-history/r303/docs/alternatives.html]
+* JqAssistant http://jqassistant.org/ (Done)
+* Macker [https://innig.net/macker/]
 * XRadar [http://xradar.sourceforge.net/]
+* Architexa [http://www.architexa.com]
+* JDepend + Google Architecture Rules [http://architecturerules.googlecode.com/svn-history/r303/docs/alternatives.html] (kicked out - because it´s old and complicated)
 
-
+== Notes
+= JqAssistant
+.Commands:
+* mvn install to analyze system
+* mvn jqassistant:server to start a neo4j-instance on http://localhost:7474/browser/
+* mvn jqassistant:report to create a html-report from the generated html (created in folder /target/site/)

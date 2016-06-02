@@ -10,7 +10,7 @@ public class NewsView {
     void view() {
         new NewsService().serviceMethod(); // #1 OK
         new NewsDTO(); // #2 OK
-        // new NewsEntity(); // #3 o_O
+        //new NewsEntity(); // #3 o_O
         // new NewsRepo(); //#7 o_O
     }
 

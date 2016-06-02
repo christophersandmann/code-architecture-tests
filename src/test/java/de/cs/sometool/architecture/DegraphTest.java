@@ -4,6 +4,7 @@ package de.cs.sometool.architecture;
 
 import de.schauderhaft.degraph.configuration.NamedPattern;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -16,6 +17,7 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
+@Ignore
 public class DegraphTest {
 
     @Test

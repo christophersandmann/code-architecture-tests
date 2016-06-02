@@ -12,6 +12,6 @@ public class NewsService {
         new NewsRepo().save(); // #4 OK
         new NewsDTO(); // #8 OK
         new NewsEntity(); // #9 OK
-        // new NewsView(); //#16 o_O
+        //new NewsView(); //#16 o_O
     }
 }
